@@ -17,8 +17,8 @@ Your harried co-workers are looking to you for a solution to take this garbled t
 //P
 
 function cleanString(s) {
-    //method to remove numbers and connect string
-    const s.replace(\/d+/g)
+  //method to remove numbers and connect string
+  return s.replace(/\d+/g, "");
 }
 
 //test cases
