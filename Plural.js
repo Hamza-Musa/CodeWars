@@ -13,13 +13,15 @@ All values will be positive integers or floats, or zero.
 //P parameters - num - +, whole number
 //R - if its non plural return false if it is return true
 //E
-
-function plural(n) {}
-
+//P
+function plural(n) {
+  if (n === 1) {
+    return false;
+  }
+  return true;
+}
 //test cases
 console.log(plural(0)); // return true
 console.log(plural(0.5)); // return true
 console.log(plural(1)); // return false
 console.log(plural(100)); // return true
-
-//P
