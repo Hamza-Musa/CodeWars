@@ -20,6 +20,11 @@ function plural(n) {
   }
   return true;
 }
+
+//ternary vs
+function plural(n) {
+  return n !== 1;
+}
 //test cases
 console.log(plural(0)); // return true
 console.log(plural(0.5)); // return true
