@@ -69,12 +69,12 @@ Zizou
 function expressionMatter(a, b, c) {
   // Define all possible combinations
   let results = [
-    a + b + c, // a + b + c
-    a * b * c, // a * b * c
-    a * (b + c), // a * (b + c)
-    (a + b) * c, // (a + b) * c
-    a + b * c, // a + b * c
-    a * b + c, // a * b + c
+    a + b + c,
+    a * b * c,
+    a * (b + c),
+    (a + b) * c,
+    a + b * c,
+    a * b + c,
   ];
 
   // Return the maximum value
