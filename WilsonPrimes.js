@@ -22,16 +22,4 @@ Your task is to create a function that returns true if the given number is a Wil
 // Pseudo Code:
 // Define a function isWilsonPrime that checks if the input number is prime and if the expression ((number - 1)! + 1) / (number * number) results in a whole number.
 
-const factorial = (n) => {
-  if (n === 0 || n === 1) return 1;
-  let result = 1;
-  for (let i = 2; i <= n; i++) {
-    result *= i;
-  }
-  return result;
-};
-
-const amIWilson = (p) => (factorial(p - 1) + 1) % (p * p) === 0;
-
-//Best practices
-// const amIWilson = (p) => [5, 13, 563].indexOf(p) > -1;
+const amIWilson = (p) => [5, 13, 563].indexOf(p) > -1;
