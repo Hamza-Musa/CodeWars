@@ -1,5 +1,4 @@
-/* 
-Instructions
+/* Instructions
 Wilson primes satisfy the following condition. Let P represent a prime number.
 
 Then,
@@ -12,42 +11,27 @@ Your task is to create a function that returns true if the given number is a Wil
 
 */
 
-//Best practices
-const amIWilson = (p) => [5, 13, 563].indexOf(p) > -1;
-
 //My answer
-function amIWilson(p) {
-  // Check if the given number is a prime number
-  if (!isPrime(p)) {
-    return false;
-  }
+// Parameters: Input number to be checked for being a Wilson prime.
 
-  // Check the Wilson prime condition
-  return (factorial(p - 1) + 1) % (p * p) === 0;
-}
+// Returns: Boolean value indicating whether the input number is a Wilson prime.
 
-// Helper function to check if a number is prime
-function isPrime(n) {
-  if (n <= 1) {
-    return false;
-  }
-  for (let i = 2; i <= Math.sqrt(n); i++) {
-    if (n % i === 0) {
-      return false;
-    }
-  }
-  return true;
-}
+// Examples:
+// For input number 5, the function should return true because ((5-1)! + 1) / (5 * 5) equals 1, satisfying the condition for Wilson primes.
 
-// Helper function to calculate factorial
-function factorial(n) {
-  if (n === 0 || n === 1) {
-    return 1;
-  } else {
-    return n * factorial(n - 1);
-  }
-}
+// Pseudo Code:
+// Define a function isWilsonPrime that checks if the input number is prime and if the expression ((number - 1)! + 1) / (number * number) results in a whole number.
 
-// Example usage
-console.log(amIWilson(5)); // Output: true (5 is a Wilson prime)
-console.log(amIWilson(6)); // Output: false (6 is not a Wilson prime)
+const factorial = (n) => {
+  if (n === 0 || n === 1) return 1;
+  let result = 1;
+  for (let i = 2; i <= n; i++) {
+    result *= i;
+  }
+  return result;
+};
+
+const amIWilson = (p) => (factorial(p - 1) + 1) % (p * p) === 0;
+
+//Best practices
+// const amIWilson = (p) => [5, 13, 563].indexOf(p) > -1;
