@@ -27,9 +27,34 @@ Examples
 //  americanEuropean(15) should return 13
 //  americanEuropean(-3) should return -3
 //P(pseudocode)
-//1. If the fllor is greater than or equal to 1:
+//1. If the floor is greater than or equal to 1:
 //  a. If the floor is, return 0 (ground floor in European system)
 //  b. If the floor is greater than or equal to 13, subtract 2 from the floor.
 //  c. Otherwise, subtract 1 from the floor
 
 //2. If the floor is negative return the floor unchanged (basements stay the same).
+
+//Answer
+function getRealFloor(floor) {
+  // a.
+  if (floor > 0) {
+    //1.
+    if (floor === 1) {
+      return 0;
+      //b.
+    } else if (floor > 13) {
+      return floor - 2;
+    } else {
+      // c.
+      return floor - 1;
+    }
+    //2.
+  } else {
+    return floor; // Basements stay the same
+  }
+}
+//test
+console.log(getRealFloor(1));
+console.log(getRealFloor(5));
+console.log(getRealFloor(15));
+console.log(getRealFloor(-2));
