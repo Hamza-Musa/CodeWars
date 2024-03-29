@@ -5,6 +5,16 @@ For example, if the parameters passed are (2, 6), the function should return [2,
 
 */
 
+//P Num, Two , integer and limit
+//R return multiples upto the limit
+//E (2, 6), the function should return [2, 4, 6] a
+//Psuedo:
+
+// 1. Create an empty array named multiples.
+// 2. Iterate from integer up to limit.
+// 3. If the current number (i) is a multiple of integer, add it to the multiples array.
+// 4. Return the multiples array containing all multiples of integer up to limit.
+
 //Answer
 
 function findMultiples(integer, limit) {
