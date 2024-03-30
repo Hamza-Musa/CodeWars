@@ -16,6 +16,20 @@ Examples
 15  =>  13
 -3  =>  -3
 
-
-
 */
+
+//P(parameters) - integer, repersenting the floor number in the American system
+//R(return) - The corresponding floor nymber in the European system
+//E(example) -
+//  americanEuropean(1) should return 0
+//  americanEuropean(0) should return 0
+//  americanEuropean(5) should return 4
+//  americanEuropean(15) should return 13
+//  americanEuropean(-3) should return -3
+//P(pseudocode)
+//1. If the fllor is greater than or equal to 1:
+//  a. If the floor is, return 0 (ground floor in European system)
+//  b. If the floor is greater than or equal to 13, subtract 2 from the floor.
+//  c. Otherwise, subtract 1 from the floor
+
+//2. If the floor is negative return the floor unchanged (basements stay the same).
