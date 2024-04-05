@@ -22,3 +22,16 @@ Examples: (Input --> Output)
 
 
 */
+
+//P number -age
+//R - conditional - string
+//E '13 - drink coke'
+//P
+
+// kids drink toddy
+
+//teens drink coke
+
+//young adults drink beer
+
+//adults drink whisky
