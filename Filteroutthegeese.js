@@ -6,6 +6,7 @@ The elements in the returned array should be in the same order as in the initial
 
 */
 
+//Answer
 //P(arameters) array of strings
 //R(eturn) return array that does include any of geeses from geese array
 //E(xample) For example, if this array were passed as an argument:
@@ -15,4 +16,9 @@ The elements in the returned array should be in the same order as in the initial
 
 //P(seudo)
 
-// .filter method, and .includes method, make false true
+function gooseFilter(birds) {
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+
+  // return an array containing all of the strings in the input array except those that match strings in geese
+  return birds.filter((bird) => !geese.includes(bird));
+}
