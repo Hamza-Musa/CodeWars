@@ -34,4 +34,17 @@ y is not considered a vowel for this kata
 
 function shortcut(string) {
   const letters = string.split("");
+  const lettersToRemove = ["a", "e", "i", "o", "u"];
+
+  // Filter out letters to remove
+  const filteredLetters = letters.filter(
+    (letter) => !lettersToRemove.includes(letter.toLowerCase())
+  );
+
+  // Join the remaining letters back into a string
+  const modifiedSentence = filteredLetters.join("");
+
+  return modifiedSentence;
 }
+
+console.log(shortcut("haha"));
