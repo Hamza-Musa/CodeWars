@@ -5,6 +5,9 @@ Example(Input --> Output)
 
 "john McClane" --> "McClane john"
 
-
-
  */
+
+// Answer
+function nameShuffler(str) {
+  //Shuffle It
+}
