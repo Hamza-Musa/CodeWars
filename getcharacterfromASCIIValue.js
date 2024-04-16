@@ -28,3 +28,6 @@ function asciiToChar(number) {
 
   return String.fromCharCode(number);
 }
+
+//Best Practice
+const getChar = String.fromCharCode;
