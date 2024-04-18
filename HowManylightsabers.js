@@ -15,3 +15,9 @@ For example(Input --> Output):
 
 
 */
+
+//Answer
+// (p)string
+//(r) num of lightsabers
+// (e) 'Zach' -> 18 : 0
+// if Zach return 18 everybody else has 0
