@@ -21,3 +21,11 @@ For example(Input --> Output):
 //(r) num of lightsabers
 // (e) 'Zach' -> 18 : 0
 // if Zach return 18 everybody else has 0
+
+function howManyLightsabersDoYouOwn(name) {
+  if (name === "Zach") {
+    return 18;
+  } else {
+    return 0;
+  }
+}
