@@ -29,3 +29,6 @@ function howManyLightsabersDoYouOwn(name) {
     return 0;
   }
 }
+
+//Better practice - ternary operator
+return name === "Zach" ? 18 : 0;
