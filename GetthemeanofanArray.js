@@ -17,6 +17,8 @@ function getAverage(marks) {
     marks.reduce((sum, currentValue) => sum + currentValue, 0) / marks.length;
   //round down js method
   return Math.floor(average);
+  //could just join it together onto one line
+  //  return Math.floor(marks.reduce((sum, x) => sum + x) / marks.length);
 }
 
 console.log(getAverage([2, 2, 2, 2])); // should equal 2
