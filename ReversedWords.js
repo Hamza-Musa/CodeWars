@@ -13,7 +13,7 @@ Example(Input --> Output):
 //P - string of words
 //R reverse the string
 //E
-//P
+//P - split turns "hello world" into ["hello", "world"] reverse reverses. joins get rid of array ans into sing string
 
 function reversedWords(str) {
   return str.split(" ").reverse("").join(" ");
