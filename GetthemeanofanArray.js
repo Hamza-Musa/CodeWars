@@ -8,13 +8,14 @@ The array will never be empty.
 */
 
 //P - arr, num
-//R average - add all numbers divide by amound
+//R average - add all numbers divide by amount
 //E -
-
-function getAverage(marks) {}
-
-console.log(getAverage([2, 2, 2, 2])); // should equal
-console.log(getAverage([1, 2, 3, 4, 5]));
-console.log(getAverage([1, 1, 1, 1, 1, 1, 1, 2]));
-
 //P
+function getAverage(marks) {
+  //.reduce method
+  //round down
+}
+
+console.log(getAverage([2, 2, 2, 2])); // should equal 2
+console.log(getAverage([1, 2, 3, 4, 5])); // should equal 3
+console.log(getAverage([1, 1, 1, 1, 1, 1, 1, 2])); // should equal 1
