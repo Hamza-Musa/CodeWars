@@ -12,8 +12,11 @@ The array will never be empty.
 //E -
 //P
 function getAverage(marks) {
-  //.reduce method
-  //round down
+  //.reduce method The .reduce() method in JavaScript is a powerful array function that iterates through each element, accumulates their values, and computes the average by dividing the total sum by the number of elements
+  let average =
+    marks.reduce((sum, currentValue) => sum + currentValue, 0) / marks.length;
+  //round down js method
+  return Math.floor(average);
 }
 
 console.log(getAverage([2, 2, 2, 2])); // should equal 2
