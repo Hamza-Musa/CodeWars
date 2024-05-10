@@ -9,3 +9,15 @@ Example(Input --> Output):
  
 
 */
+
+//P - string of words
+//R reverse the string
+//E
+//P
+
+function reversedWords(str) {
+  return str.split(" ").reverse("").join(" ");
+}
+
+console.log(reversedWords("hello world!"));
+console.log(reversedWords("yoda doesn't speak like this"));
