@@ -18,12 +18,12 @@
 //while loop - while moneyIn = 1 return this
 
 function changeMe(moneyIn) {
-  // Write your function here
-  const validChange = ["£5, £2, £1, 50p, 20p"];
+  const validChange = ["£5", "£2", "£1", "50p", "20p"];
   if (!validChange.includes(moneyIn)) {
     console.log("Invalid money denomination.");
   } else {
-    console.log("Valid money denomination.");
+    //     return either 20p or 10p coins change
+    // make sure this is a string
   }
 }
 
