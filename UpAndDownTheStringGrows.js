@@ -15,3 +15,6 @@ Note: Meta programming is not allowed in this kata. So, the size of your solutio
 
 
 */
+
+//answer
+const STRANGE_STRING = "İ";
