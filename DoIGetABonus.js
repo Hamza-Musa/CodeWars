@@ -12,10 +12,18 @@ Return the total figure the individual will receive as a string prefixed with "�
 //P - two parameters - one a integer, another a boolean
 //R if true times salary by 10 if not return regular salary
 //E
-
-console.log(bonusTime(100, true)); // return '£1000'
-console.log(bonusTime(100, false)); // return '£100'
-
 //P
 //if loop
 //   return "\u00A3" + Stringifying the salary
+
+function bonusTime(salary, bonus) {
+  if (bonus === true) {
+    salary *= 10;
+  } else {
+    salary;
+  }
+  return "\u00A3" + String(salary);
+}
+
+console.log(bonusTime(100, true)); // return '£1000'
+console.log(bonusTime(100, false)); // return '£100'
