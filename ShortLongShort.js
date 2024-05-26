@@ -11,3 +11,14 @@ For example: (Input1, Input2) --> output
 ("22", "1") --> "1221"
 
 */
+
+//P - two arguments - both strings
+//R shorter string at begnning and end
+//E
+
+console.log(solution("1", "22")); // "1221"
+console.log(solution("22", "1")); // "1221"
+
+//P
+// Check which string is shorter.
+// Concatenate the strings in the order short + long + short.
