@@ -22,3 +22,18 @@ console.log(solution("22", "1")); // "1221"
 //P
 // Check which string is shorter.
 // Concatenate the strings in the order short + long + short.
+
+function solution(a, b) {
+  let short;
+  let long;
+
+  if (a < b) {
+    a += short;
+    b += long;
+  } else if (b < a) {
+    b += short;
+    a += long;
+  }
+
+  return short + long + short;
+}
