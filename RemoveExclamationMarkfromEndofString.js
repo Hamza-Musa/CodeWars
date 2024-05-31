@@ -13,3 +13,16 @@ Examples
 
 
 */
+
+//Parameters -> string
+//Return -> return string without exclamation mark at the end of the string
+//Example
+//Pseudocode
+
+function remove(string) {}
+
+console.log(remove("Hi!")); // "Hi"
+console.log(remove("Hi!!!")); // "Hi!!"
+console.log(remove("!Hi")); // "!Hi"
+console.log(remove("Hi! Hi!")); // "Hi! Hi"
+console.log(remove("Hi")); // "Hi"
