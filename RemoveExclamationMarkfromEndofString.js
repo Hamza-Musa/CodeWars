@@ -19,8 +19,18 @@ Examples
 //Example
 //Pseudocode
 
-function remove(string) {}
+function remove(string) {
+  // Check if the last character is '!'
+  if (string.slice(-1) === "!") {
+    // Remove the last chracter('!')
+    return string.slice(0, -1);
+  } else {
+    //Return the otriginal stirng if no '!' at the end
+    return string;
+  }
+}
 
+//test cases
 console.log(remove("Hi!")); // "Hi"
 console.log(remove("Hi!!!")); // "Hi!!"
 console.log(remove("!Hi")); // "!Hi"
