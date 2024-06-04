@@ -23,8 +23,8 @@ Examples:
 
 //ANSWER
 function capitalize(word) {
-  //Get the first character of the string
-  //Convert the first character to uppercase
+  //Get the first character of the string. Convert the first character to uppercase
+  let firstChar = word.charAt(0).toUpperCase();
   // Get the rest of the string starting from the second character
   //Concatenate the uppercase first character with the rest of the string
   //Return the result
