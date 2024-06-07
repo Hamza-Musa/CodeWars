@@ -36,3 +36,10 @@ function capitalize(word) {
 console.log(capitalize("hello")); //Hello
 console.log(capitalize("Hello")); //Hello
 console.log(capitalize("a")); //A
+
+/*Best Practice
+function capitalizeWord(word){
+return word[0].toUpperCase() + word.slice(1);
+}
+
+*/
