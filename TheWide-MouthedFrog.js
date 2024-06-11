@@ -9,3 +9,18 @@ Your goal in this kata is to create complete the mouth_size method this method t
 
 
 */
+
+//Parameters- single parameter - string
+//R return if alligator -> small else return wide
+//E
+//P
+
+function mouthSize(animal) {
+  //if alligator return "small"
+  //else -other animals -> return "wide"
+}
+
+//Examples
+console.log(mouthSize("alligator")); //"small"
+console.log(mouthSize("cat")); //"wide"
+console.log(mouthSize("dog")); //"wide"
