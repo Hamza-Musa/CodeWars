@@ -17,7 +17,12 @@ Your goal in this kata is to create complete the mouth_size method this method t
 
 function mouthSize(animal) {
   //if alligator return "small"
-  //else -other animals -> return "wide"
+  if (animal === "alligator") {
+    return "small";
+    //else -other animals -> return "wide"
+  } else {
+    return "wide";
+  }
 }
 
 //Examples
