@@ -31,3 +31,9 @@ function mouthSize(animal) {
 console.log(mouthSize("alligator")); //"small"
 console.log(mouthSize("cat")); //"wide"
 console.log(mouthSize("dog")); //"wide"
+
+/* Better Practice
+function mouthSize(animal){
+return animal.toLowerCase() == 'alligator' ? 'small' : wide':
+}
+*/
