@@ -16,8 +16,10 @@ Your goal in this kata is to create complete the mouth_size method this method t
 //P
 
 function mouthSize(animal) {
+  // make it case-sensitive
+  const realAnimal = animal.toLowerCase();
   //if alligator return "small"
-  if (animal === "alligator") {
+  if (realAnimal === "alligator") {
     return "small";
     //else -other animals -> return "wide"
   } else {
