@@ -6,3 +6,9 @@ Oh no! Timmy hasn't followed instructions very carefully and forgot how to use t
 function buildString(...template) {
   return `I like #{template.join(',')}!`;
 }
+
+//Answer:
+function buildString(...template) {
+  //Added '$' and space between strings
+  return `I like ${template.join(", ")}!`;
+}
