@@ -15,3 +15,19 @@ Good luck! Your team knows they can count on you!
 
 
 */
+
+//Answer
+// num - float,  no strings
+// return the number passed formatted into dollars - float -> string
+// 39.99 -> '$39.99'
+
+function formatMoney(amount) {
+  //
+  return `$${amount.toFixed(2)}`;
+}
+
+//test cases
+console.log(formatMoney(39.99)); // '$39.99'
+console.log(formatMoney(3)); //'$3.00'
+console.log(formatMoney(3.1)); //'$3.10'
+console.log(formatMoney(0)); // '$0'
