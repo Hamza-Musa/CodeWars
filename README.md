@@ -14,7 +14,7 @@ Every day, the first thing I do is solve a Codewar!
 
 ## Optimizations
 - Looking at best practices, spend time understanding that code and how to apply it to my code going forward.
-- I consistently refactor and optimize my code, sometimes for efficiency, and sometimes for readability. 
+- Consistently refactor and optimize my code, sometimes for efficiency, and sometimes for readability. 
 
 
 
