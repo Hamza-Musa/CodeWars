@@ -13,5 +13,13 @@ Create a combat function that takes the player's current health and the amount o
 
 //Answer
 
+function combat(health, damage) {
+  if(health - damage < 0) {
+    return 0
+} else{
+    return health-damage;    
+  }
+}
+
 console.log(combat(40, 20)) //20
 console.log(combat(40, 50)) //0
