@@ -5,4 +5,13 @@ Create a combat function that takes the player's current health and the amount o
 
 */
 
+//P - two num -> positiv, no special characters, no strings
+//R -> health- damage, but a;sp health cant be less than 0
+//E
+//P
+
+
 //Answer
+
+console.log(combat(40, 20)) //20
+console.log(combat(40, 50)) //0
