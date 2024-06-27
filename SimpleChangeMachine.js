@@ -32,22 +32,17 @@ function changeMe(moneyIn) {
 
   let pence = conversionTable[moneyIn]; //// Get the value in pence
   let change = [];
-}
 
-//Special case for 20p to avoid returning 20p
-if (pence === 20) {
-  chagne.push("10p", "10p");
-} else {
-  //calculate number of 20p coins
-  while (pence >= 20) {
-    change.push("20p");
-    pence -= 20;
+  //Special case for 20p to avoid returning 20p
+  if (pence === 20) {
+    change.push("10p", "10p");
+  } else {
+    //calculate number of 20p coins
+    while (pence >= 20) {
+      change.push("20p");
+      pence -= 20;
+    }
   }
+
+  return change.join(" "); //join coins into a single string
 }
-
-return change.join(" "); //join coins into a single string
-
-// Tests
-console.log(changeMe("£1")); // "20p 20p 20p 20p 20p"
-console.log(changeMe("50p")); // "20p 20p 10p"
-console.log(changeMe("20p")); // "10p 10p"
