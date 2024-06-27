@@ -14,18 +14,40 @@
 //E -
 //P
 
-//conditionals?
-//while loop - while moneyIn = 1 return this
+//Answer
 
 function changeMe(moneyIn) {
-  const validChange = ["£5", "£2", "£1", "50p", "20p"];
-  if (!validChange.includes(moneyIn)) {
-    console.log("Invalid money denomination.");
-  } else {
-    //     return either 20p or 10p coins change
-    // make sure this is a string
+  const conversionTable = {
+    "£5": 500,
+    "£2": 200,
+    "£1": 100,
+    "50p": 50,
+    "20p": 20,
+  };
+
+  //Check if input is valid
+  if (!conversionTable.hasOwnProperty(moneyIn)) {
+    return moneyIn; // Return unprocessed if not valid
+  }
+
+  let pence = conversionTable[moneyIn]; //// Get the value in pence
+  let change = [];
+}
+
+//Special case for 20p to avoid returning 20p
+if (pence === 20) {
+  chagne.push("10p", "10p");
+} else {
+  //calculate number of 20p coins
+  while (pence >= 20) {
+    change.push("20p");
+    pence -= 20;
   }
 }
 
-console.log("£1"); // "20p" "20p" "20p" "20p" "20p"
-console.log("50p"); // "20p" "20p" "10p"
+return change.join(" "); //join coins into a single string
+
+// Tests
+console.log(changeMe("£1")); // "20p 20p 20p 20p 20p"
+console.log(changeMe("50p")); // "20p 20p 10p"
+console.log(changeMe("20p")); // "10p 10p"
