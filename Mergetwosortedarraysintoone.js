@@ -22,10 +22,22 @@ Happy coding!
 //P
 
 function mergeArrays(arr1, arr2) {
-  // Sort the arrays
-  // Merge the arrays
+  // Merge the arrays first
+  let mergedArr = arr1.concat(arr2);
+
   // Sort the merged array
+  mergedArr.sort((a, b) => a - b);
+
+  // Remove duplicates
+  let uniqueSortedArr = [...new Set(mergedArr)];
+
+  return uniqueSortedArr;
 }
+
+// Example usage
+let arr1 = [3, 1, 4, 1];
+let arr2 = [5, 2, 6, 3];
+console.log(mergeArrays(arr1, arr2)); // Output: [1, 2, 3, 4, 5, 6]
 
 //examples
 console.log(mergeArrays([(1, 2, 3, 4, 5)], [6, 7, 8, 9, 10])); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
