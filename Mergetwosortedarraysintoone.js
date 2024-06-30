@@ -43,3 +43,16 @@ console.log(mergeArrays(arr1, arr2)); // Output: [1, 2, 3, 4, 5, 6]
 console.log(mergeArrays([(1, 2, 3, 4, 5)], [6, 7, 8, 9, 10])); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 console.log(mergeArrays([1, 3, 5, 7, 9], [10, 8, 6, 4, 2])); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 console.log(mergeArrays([1, 3, 5, 7, 9, 11, 12], [1, 2, 3, 4, 5, 10, 12])); // [1, 2, 3, 4, 5, 7, 9, 10, 11, 12]
+
+// Using the spread operator
+
+function mergeArrays(arr1, arr2) {
+  let mergedArr = [...arr1, ...arr2];
+  //Sort merged arr
+  mergedArr.sort((a, b) => a - b);
+
+  //remove duplicates
+  let uniqueSortedArr = [...new Set(mergedArr)];
+
+  return uniqueSortedArr;
+}
