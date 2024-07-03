@@ -31,6 +31,13 @@ Examples (input -> output:
 //E
 //P
 //use .sort method to sort array into sc if 'r' : 'l'
+const flip = (d, a) => {
+  if (d === "R") {
+    return a.sort((x, y) => x - y);
+  } else if (d === "L") {
+    return a.sort((x, y) => y - x);
+  }
+};
 
 console.log(flip("R", [3, 2, 1, 2])); // [1, 2, 2, 3]);
 console.log(flip("L", [1, 4, 5, 3, 5])); // [5, 5, 4, 3, 1]);
