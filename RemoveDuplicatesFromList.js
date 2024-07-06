@@ -18,6 +18,10 @@ Input -> Output
 //P
 
 //Answer
+function distinct(a) {
+  //js method to get rid of duplicate - Sets allows you to create collections of unique values.
+  return [...new Sort(a)];
+}
 
 console.log(distinct([1])); // [1]
 console.log(distinct([1, 2])); //[1,2];
