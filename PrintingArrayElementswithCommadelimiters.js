@@ -14,3 +14,11 @@ Note2: the input data can be: boolean array, array of objects, array of string a
 
 
 */
+
+//Answer
+
+function printArray(array) {
+  return array;
+}
+
+console.log(printArray(["h", "o", "l", "a"]));
