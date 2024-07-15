@@ -127,123 +127,13 @@ There is no preloaded code to help you. This is not about coding skills; think b
 */
 
 //Answer
-function SubtractSum(n) {
-  const fruits = [
-    "kiwi",
-    "pear",
-    "kiwi",
-    "banana",
-    "melon",
-    "banana",
-    "melon",
-    "pineapple",
-    "apple",
-    "pineapple",
-    "cucumber",
-    "pineapple",
-    "cucumber",
-    "orange",
-    "grape",
-    "orange",
-    "grape",
-    "apple",
-    "grape",
-    "cherry",
-    "pear",
-    "cherry",
-    "pear",
-    "kiwi",
-    "banana",
-    "kiwi",
-    "apple",
-    "melon",
-    "banana",
-    "melon",
-    "pineapple",
-    "melon",
-    "pineapple",
-    "cucumber",
-    "orange",
-    "apple",
-    "orange",
-    "grape",
-    "orange",
-    "grape",
-    "cherry",
-    "pear",
-    "cherry",
-    "pear",
-    "apple",
-    "pear",
-    "kiwi",
-    "banana",
-    "kiwi",
-    "banana",
-    "melon",
-    "pineapple",
-    "melon",
-    "apple",
-    "cucumber",
-    "pineapple",
-    "cucumber",
-    "orange",
-    "cucumber",
-    "orange",
-    "grape",
-    "cherry",
-    "apple",
-    "cherry",
-    "pear",
-    "cherry",
-    "pear",
-    "kiwi",
-    "pear",
-    "kiwi",
-    "banana",
-    "apple",
-    "banana",
-    "melon",
-    "pineapple",
-    "melon",
-    "pineapple",
-    "cucumber",
-    "pineapple",
-    "cucumber",
-    "apple",
-    "grape",
-    "orange",
-    "grape",
-    "cherry",
-    "grape",
-    "cherry",
-    "pear",
-    "cherry",
-    "pear",
-    "apple",
-    "kiwi",
-    "banana",
-    "kiwi",
-    "banana",
-    "melon",
-    "banana",
-    "melon",
-    "pineapple",
-    "apple",
-    "pineapple",
-  ];
+//P - num between n >= 10 and n < 10000  
 
-  while (true) {
-    // Calculate the sum of the digits of n
-    const digitSum = String(n)
-      .split("")
-      .reduce((sum, digit) => sum + Number(digit), 0);
-
-    // Subtract the sum of the digits from n
-    n -= digitSum;
-
-    // Check if the new n is in the list of fruits
-    if (n <= 100) {
-      return fruits[n - 1];
-    }
-  }
-}
+function SubtractSum(n){
+  let digits = n.toString().split('').map(Number); // [3,2,5]
+  let sum = digits.reduce((a,b)=> a + b, 0);
+   return sum
+ }
+ 
+ console.log(SubtractSum(325))
+ 
