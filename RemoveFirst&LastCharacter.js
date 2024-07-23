@@ -12,7 +12,7 @@ It's pretty straightforward. Your goal is to create a function that removes the 
 
 function removeFndL(str) {
   //Extracts a part of a string and returns a new string. .splice string method
-  str.splice(1, -1);
+  return str.slice(1, -1);
 }
 
 console.log(removeFndL("hello")); // ell
