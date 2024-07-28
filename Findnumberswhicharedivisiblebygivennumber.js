@@ -10,3 +10,7 @@ Example(Input1, Input2 --> Output)
 //R
 //E
 //P
+
+function divisibleBy(numbers, divisor) {
+  return numbers.filter((element) => element % divisor == 0);
+}
