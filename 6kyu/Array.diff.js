@@ -10,3 +10,19 @@ arrayDiff([1,2,2,2,3],[2]) == [1,3]
 
 
 */
+
+//Answer
+//common numbers in array must go
+
+function arrayDiff(a, b) {
+  const uniqueValueFromA = a.filter((num) => !b.includes(num));
+  const uniqueValueFromB = b.filter((num) => !a.includes(num));
+
+  // Combine the results
+  const uniqueNumbers = [...uniqueValueFromA, ...uniqueValueFromB];
+  return uniqueNumbers;
+
+  //   if(a.includes[null]){
+
+  //   }
+}
