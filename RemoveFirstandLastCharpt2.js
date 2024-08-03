@@ -24,19 +24,20 @@ Examples
 // string - char seperated with commas
 // return arr into a string without commas, also if 2< return null
 //
-
-function removeChar(str) {
-    // null cases
-    if(str.length < 3){
-        return null
-    }
+function array(string) {
+  let elements = string.split(",");
+  if (elements.length < 3) {
+    return null;
+  }
+  elements = elements.slice(1, -1);
+  return elements.join(" ");
 }
 
-console.log(removeChar("")); // NULL
-console.log(removeChar("1")); // NULL
-console.log(removeChar("1,2")); // NULL
+// Examples
+console.log(array("1,2,3")); // "2"
+console.log(array("1,2,3,4")); // "2 3"
+console.log(array("1,2,3,4,5")); // "2 3 4"
 
-console.log(removeChar("1,2,3")); // "2"
-console.log(removeChar("1,2,3,4")); // "2 3"
-console.log(removeChar("1,2,3,4,5")); // "2 3 4"
-
+console.log(array("")); // null
+console.log(array("1")); // null
+console.log(array("1,2")); // null
