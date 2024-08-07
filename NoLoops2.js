@@ -7,6 +7,9 @@ Array can contain numbers or strings. x can be either. Return true if the array 
 
 Looking for more, loop-restrained fun? Check out the other kata in the series:
 
-No
-
 */
+const check = (a, x) => a.includes(x);
+
+// function check(a, x) {
+//   return a.includes(x);
+// }
