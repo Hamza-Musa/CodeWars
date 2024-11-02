@@ -28,3 +28,10 @@ However, the arrays can have varying lengths, not just limited to 4.
 
 // [0, 1, 0, 1] ==> 5
 // [1, 0, 0, 1] ==> 9
+
+//Answer
+const binaryArrayToNumber = arr => {
+    return arr.reduce((accumulator, currentValue) => {
+  return accumulator * 2 + currentValue;
+    });
+  }
