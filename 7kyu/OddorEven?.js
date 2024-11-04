@@ -48,3 +48,7 @@ Have fun!
     console.log(oddOrEven(0)) // "even"
     console.log(oddOrEven( [0, 1, 6])) // "odd"
     console.log(oddOrEven( [0, -1, -5])) // "even"
+
+
+    // return arr.reduce((a,b)=>a+b,0) % 2 ? 'odd' : 'even';
+        //better solution
