@@ -21,6 +21,30 @@ Have fun!
 
 //answer:
 
-function oddOrEven(array) {
-    //enter code here
- }
+//R sum of array is it even or odd - return string "even" or "odd"
+//E - 
+//P 
+  //loop thru array sum all numbers in array 
+    //use conditional if % 2==0 return "even" || "odd"
+
+    function oddOrEven(array) {
+        if (!Array.isArray(array)) {
+        return "Input must be an array"; // Handle non-array input
+      }
+    
+      const initialValue = 0;
+      const sum = array.reduce(
+      (accumulator, currentValue) => accumulator + currentValue,
+      initialValue,
+      );
+      if(sum % 2 === 0){
+        return "even";
+      } else {
+        return "odd";
+      }
+    }
+    
+    //E
+    console.log(oddOrEven(0)) // "even"
+    console.log(oddOrEven( [0, 1, 6])) // "odd"
+    console.log(oddOrEven( [0, -1, -5])) // "even"
