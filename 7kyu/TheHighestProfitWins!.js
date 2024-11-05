@@ -14,8 +14,18 @@ All arrays or lists will always have at least one element, so you don't need to 
 
 */
 
-//Setup
+//Answer
 
 function minMax(arr){
-    return [0,0]; // fix me!
-  }
+      const min = Math.min(...arr);
+      const max = Math.max(...arr);
+      
+      return [min,max];
+      
+    }
+    
+    //test
+     console.log(minMax([1,2,3,4,5])); // 1, 5
+     console.log(minMax([2334454, 5])); // 5, 2334454
+     console.log(minMax([5])); // 5 5
+    
