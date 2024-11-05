@@ -21,6 +21,8 @@ function minMax(arr){
       const max = Math.max(...arr);
       
       return [min,max];
+      // return [Math.min(...arr), Math.max(...arr)];
+
       
     }
     
