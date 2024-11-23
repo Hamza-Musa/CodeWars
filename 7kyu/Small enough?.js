@@ -6,10 +6,10 @@ You can assume all values in the array are numbers.
 
 //answer
 function smallEnough(a, limit){
-    let lastDig = a[a.length - 1];
-      if(lastDig > limit) {
-        return false;
-      } else {
-      return true
-    }
+  let max = Math.max(...a)
+    if(max > limit) {
+      return false;
+    } else {
+    return true
   }
+}
