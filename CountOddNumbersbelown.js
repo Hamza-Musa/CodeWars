@@ -9,7 +9,7 @@ Examples (Input -> Output)
 
 //answer 
 function oddCount(n){
-  return n % 2 === 0;
+    return Math.floor(n / 2);
 }
 
 console.log(oddCount(2));
